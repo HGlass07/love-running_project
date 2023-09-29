@@ -51,6 +51,15 @@ h1 {
     
 }
 
+nav {position:absolute;
+    background-color: #ffffff;
+    width:100%;
+    padding: 0 1rm;
+    left: 0;
+    box-shadow: 0 2px 2px solid #3a3a3a;
+    display: none;
+}
+
 main {
     flex: 1 0 auto;
     background-color: lightgreen;
