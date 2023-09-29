@@ -17,14 +17,23 @@ body {
     font-family:'lato', sans-serif;
 }
 
+
+
 header {
     background-color: #ffffff;
     padding: 0 1rm;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
+
+.nav-toggle-label {
+    font-size: 10rm;
+}
 
 header a {
     text-decoration:none;
@@ -58,11 +67,27 @@ nav {position:absolute;
     left: 0;
     box-shadow: 0 2px 2px solid #3a3a3a;
     display: none;
+    top: 100%;
+
 }
+
+
+#nav-toggle:checked~nav {
+    display: block;
+    
+}
+
+#nav-toggle {display:none;
+
+}
+
+
+
 
 main {
     flex: 1 0 auto;
     background-color: lightgreen;
+    margin-top: 47px;
     }
 
 footer {
